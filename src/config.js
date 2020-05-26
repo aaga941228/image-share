@@ -1,6 +1,6 @@
 require('dotenv').config()
 
 module.exports = {
-    port: process.env.PORT,
-    uri: process.env.URI
+    port: process.env.PORT || 3001,
+    uri: process.env.URI,
 }
