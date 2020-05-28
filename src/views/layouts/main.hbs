@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{>head}}
+  </head>
+  <body>
+    {{>navigation}}
+
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-md-8">
+          {{{ body }}} 
+        </div>
+        <div class="col-md-4">
+          {{>stats viewModel}}
+          {{>popular viewModel}}
+          {{>comments viewMode}}
+        </div>
+      </div>
+    </div>
+
+    {{>footer}}
+    <script src="/statics/js/index.js"></script>
+  </body>
+</html>
